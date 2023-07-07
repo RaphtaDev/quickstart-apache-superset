@@ -1,4 +1,4 @@
-# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+11# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 Description: "(SO8018)—Apache Superset on AWS offers the customer a scalable, open-source business intelligence application, v1.0.0. (qs-1s0fbq688)."
 Metadata:
@@ -708,7 +708,7 @@ Resources:
               Ref: SupersetTCP8088TargetGroup
         Type: forward
       LoadBalancerArn:
-        Ref: LoadBalancer
+        !Ref: LoadBalancer
       Port: 8088
       Protocol: TCP
     Type: AWS::ElasticLoadBalancingV2::Listener
